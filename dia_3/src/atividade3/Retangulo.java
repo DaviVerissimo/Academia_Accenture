@@ -54,26 +54,28 @@ public class Retangulo {
 	}
 
 	public void calcularArea() {
-		setArea(altura * base); 
+		setArea(altura * base);
 	}
 
 	public void calcularPerimetro() {
-		setPerimetro((2 * base) + (2 * altura)); 
+		setPerimetro((2 * base) + (2 * altura));
 	}
 
 	public static void main(String[] args) {
-		double novaBase = Integer.parseInt(JOptionPane.showInputDialog("Digite a base:"));
-		double novaAltura = Integer.parseInt(JOptionPane.showInputDialog("Digite a altura:"));
+		for (int i = 0; i <= 6; i++) {
+			double novaBase = Integer.parseInt(JOptionPane.showInputDialog("Digite a base:"));
+			double novaAltura = Integer.parseInt(JOptionPane.showInputDialog("Digite a altura:"));
 
-		Retangulo novoRetangulo = new Retangulo(novaBase, novaAltura);
+			Retangulo novoRetangulo = new Retangulo(novaBase, novaAltura);
 
-		novoRetangulo.calcularArea();
-		String mensagemArea = "A area do retangulo é : " + novoRetangulo.getArea();
-		JOptionPane.showMessageDialog(null, mensagemArea);
+			novoRetangulo.calcularArea();
+			String mensagemArea = "A area do retangulo é : " + novoRetangulo.getArea();
+			JOptionPane.showMessageDialog(null, mensagemArea);
 
-		novoRetangulo.calcularPerimetro();
-		String mensagemPerimetro = "O perimetro do retangulo é : " + novoRetangulo.getPerimetro();
-		JOptionPane.showMessageDialog(null, mensagemPerimetro);
+			novoRetangulo.calcularPerimetro();
+			String mensagemPerimetro = "O perimetro do retangulo é : " + novoRetangulo.getPerimetro();
+			JOptionPane.showMessageDialog(null, mensagemPerimetro);
+		}
 
 	}
 

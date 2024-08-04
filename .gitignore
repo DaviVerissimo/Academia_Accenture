@@ -52,3 +52,13 @@ dia_5/bin/atividade1/erros/EstouroSaqueException.class
 dia_5/bin/atividade1/PrincipalContaCorrente.class
 dia_5/bin/module-info.class
 dia_5/src/module-info.java
+dia_6/.classpath
+dia_6/.project
+dia_6/.settings/org.eclipse.core.resources.prefs
+dia_6/.settings/org.eclipse.jdt.core.prefs
+*.class
+dia_6/src/module-info.java
+ExerciciosJavaStreams/ExercicioJavaStreams/.classpath
+ExerciciosJavaStreams/ExercicioJavaStreams/.project
+ExerciciosJavaStreams/ExercicioJavaStreams/.settings/org.eclipse.core.resources.prefs
+ExerciciosJavaStreams/ExercicioJavaStreams/.settings/org.eclipse.jdt.core.prefs

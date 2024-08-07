@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Endereço por CEP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Endereço por CEP</h2>
+        <div th:if="${endereco != null}">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>CEP</th>
+                        <th>Logradouro</th>
+                        <th>Bairro</th>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td th:text="${endereco.cep}">CEP</td>
+                        <td th:text="${endereco.logradouro}">Logradouro</td>
+                        <td th:text="${endereco.bairro}">Bairro</td>
+                        <td th:text="${endereco.localidade}">Cidade</td>
+                        <td th:text="${endereco.uf}">Estado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div th:if="${endereco == null}">
+            <p>Endereço não encontrado para o CEP informado.</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

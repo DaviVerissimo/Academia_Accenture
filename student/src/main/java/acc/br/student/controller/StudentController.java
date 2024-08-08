@@ -16,7 +16,7 @@ import acc.br.student.service.StudentService;
 @RestController
 
 public class StudentController {
-
+//fazer em react  versão que inseri dados e consulta dados.
     //autowired the StudentService class
 
     @Autowired
